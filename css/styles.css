@@ -1,32 +1,43 @@
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+    font-size: 62.5%;  /* 1REM = 10px */
+}
+
+*, *:before, *:after {
     box-sizing: inherit;
-  }
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
 
 /* Globales */
 
+h1, h2, h3{
+    font-family: 'Playfair Display', serif;
+}
 a {
     text-decoration: none;
     color: #000;
 }
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
 img{
-    max-width: 100%; /* para que la imagen fluya en cualquier pantalla */
+    max-width: 100%; /* para que se adapte al ancho del elemento padre */
     display: block; /* solucion para cubrir por completo el espacio de imagenes */
 }
 
 /* Header y Navegacion */
 .nombre-sitio{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
+    font-size: 4rem;
 }
   
 .nombre-sitio span{
@@ -34,11 +45,11 @@ img{
 }
 
 .contenedor-navegacion{
-    border-top: 1px solid #e1e1e1;
+    border-top: .1rem solid #e1e1e1;
 }
 
 .nav-principal{
-    padding: 20px 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-around;
 }
@@ -47,7 +58,7 @@ img{
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 50.5rem;
 }
 
 /* Categorias */
@@ -59,8 +70,8 @@ img{
 .categoria a{
     display: block;
     text-align: center;
-    padding: 20px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 2rem;
 }
 
 .categoria a:hover{
@@ -69,18 +80,18 @@ img{
     font-weight: 700;
 }
 .categoria:nth-child(1) a:hover {
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 1rem;
 }
 .categoria:nth-child(2) a:hover {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 .categoria:nth-child(3) a:hover {
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 1rem;
 }
 
 .listado-categorias{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
