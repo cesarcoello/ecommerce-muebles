@@ -18,7 +18,8 @@ a {
 }
 
 img{
-    max-width: 100%;
+    max-width: 100%; /* para que la imagen fluya en cualquier pantalla */
+    display: block; /* solucion para cubrir por completo el espacio de imagenes */
 }
 
 /* Header y Navegacion */
@@ -50,6 +51,33 @@ img{
 }
 
 /* Categorias */
+
+.categorias{
+    text-align: center;
+}
+
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    font-weight: 700;
+}
+.categoria:nth-child(1) a:hover {
+    border-bottom-right-radius: 10px;
+}
+.categoria:nth-child(2) a:hover {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.categoria:nth-child(3) a:hover {
+    border-bottom-left-radius: 10px;
+}
 
 .listado-categorias{
     display: grid;
