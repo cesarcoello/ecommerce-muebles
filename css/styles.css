@@ -228,3 +228,8 @@ img{
 .footer-menu a{
     display: block;
 }
+
+.copyright{
+    margin-top: 5rem;
+    text-align: center;
+}
