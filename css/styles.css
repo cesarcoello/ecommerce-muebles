@@ -64,7 +64,7 @@ img{
 }
 
 .contenedor-navegacion{
-    border-top: .1rem solid #e1e1e1;
+    border-top: 1px solid #e1e1e1;
 }
 
 .nav-principal{
@@ -184,9 +184,6 @@ img{
     grid-column: 5 / 7;
 }
 
-
-
-
 .producto{
     background-color: #037bc0;
 }
@@ -210,3 +207,16 @@ img{
     font-weight: 900;
 }
 
+/* Footer */
+
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
